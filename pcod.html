@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irregular Periods Checker</title>
+  <link rel="stylesheet" href="pcod-styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Irregular Periods Checker</h1>
+    <form id="periodCheckerForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br><br>
+      
+      <label for="cycleLength">Average Menstrual Cycle Length (days):</label>
+      <input type="number" id="cycleLength" name="cycleLength" required><br><br>
+      
+      <label for="lastPeriod">Date of Last Period:</label>
+      <input type="date" id="lastPeriod" name="lastPeriod" required><br><br>
+      
+      <button type="button" onclick="checkPeriods()">Check Irregularity</button>
+    </form>
+
+   <div id="results" style="display: none;">
+  <h2>Results</h2>
+  <p id="resultText"></p>
+  <div id="reasons"></div>
+  <h3>Precautions:</h3>
+  <ul id="precautionsList"></ul>
+  <h3>Diet Recommendations:</h3>
+  <p id="dietRecommendations"></p>
+</div>
+
+  </div>
+
+  <script src="pcod-script.js"></script>
+</body>
+</html>

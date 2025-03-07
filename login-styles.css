@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('flower.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimation 10s infinite alternate;
+    backdrop-filter: blur(5px);
+  }
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  --primary-color: #eab7d6;
+  background-color: #eab7d6;
+  color:black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+  --primary-color: #eab7d6;
+ 
+  }
+  
+  button:active {
+  --primary-color: #eab7d6;
+    transform: translateY(1px);
+  }
+  

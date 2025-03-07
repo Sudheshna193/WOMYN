@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track My Period</title>
+    <link rel="stylesheet"  href="track-my-period-styles.css">
+    <link rel="icon" type="image/jpeg" href="favico.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Track My Period</h1>
+        <form id="periodForm">
+            <div class="input-group">
+                <label for="lastPeriod">Last Period Date:</label>
+                <input type="date" id="lastPeriod" required>
+            </div>
+            <div class="input-group">
+                <label for="cycleLength">Cycle Length (days):</label>
+                <input type="number" id="cycleLength" value="28" required>
+            </div>
+            <div class="input-group">
+                <label for="notifyMe">
+                    <input type="checkbox" id="notifyMe">
+                    Notify me of the next period
+                </label>
+            </div>
+            <button type="submit">Calculate Next Period</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="track-my-period-script.js"></script>
+</body>
+</html>
